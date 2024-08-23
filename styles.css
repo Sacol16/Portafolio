@@ -36,7 +36,7 @@
 }
 
 .home{
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,7 +112,7 @@
   margin-bottom: 5px;
 }
 .about{
-  height: 60vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -160,7 +160,7 @@
   font-size: 21px;
 }
 .portfolio{
-  height: 125vh;
+  height: 140vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -208,7 +208,7 @@
 }
 
 .contact{
-  height: 30vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
