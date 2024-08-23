@@ -6,9 +6,9 @@
 .header{
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0px;
   width: 100%;
-  
+  gap: 100px;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -30,17 +30,18 @@
 
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover{
   color: rgb(29, 128, 62);
   font-size: 22px;
 }
 
 .home{
-  height: 60vh;
+  height: 80vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 10%;
+  margin-bottom: 0px;
 }
 
 .home-content{
@@ -111,7 +112,7 @@
   margin-bottom: 5px;
 }
 .about{
-  height: 120vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -159,7 +160,7 @@
   font-size: 21px;
 }
 .portfolio{
-  height: 100vh;
+  height: 125vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -207,7 +208,7 @@
 }
 
 .contact{
-  height: 100vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -221,29 +222,66 @@
   font-weight: 700;
 }
 
-.btn-box4 div {
-  display: inline-flex;
+.btn-box4{
+  display:flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-  width: auto;
+}
+
+.btn-box4 a{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 120px; 
   height: 100px;
   background: rgb(29, 128, 62);
   border: 2px solid rgb(29, 128, 62);
   border-radius: 8px;
   font-size: 19px;
   color: azure;
-  text-decoration: none;
+  text-decoration: none; 
   font-weight: 600;
   letter-spacing: 1px;
   margin-left: 10px;
   margin-bottom: 15px;
-  
-
+  text-align: center; 
+  cursor: pointer; 
+  box-sizing: border-box;
+}
+.btn-box4 a:hover {
+  width: 140px;
+  height: 120px;
+  font-size: 21px;
 }
 
-.btn-box4 a{
-  text-decoration: none;
-  color: azure;
+.ignore{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.ignore-content{
+  max-width: 600px;
+}
+.ignore-content h1{
+  font-size: 56px;
+  font-weight: 700;
+}
+.ignore-content p{
+  font-size: 16px;
+}
+.ignore-content h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+.ignore-content ol li {
+  line-height: 1.8; /* Ajusta el valor según el espacio que desees */
+  margin-bottom: 10px; /* Espacio adicional entre cada elemento */
+}
+
+.ignore-content ol {
+  padding-left: 20px; /* Añade un poco de padding para la lista */
 }

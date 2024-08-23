@@ -16,21 +16,25 @@
       <a class="logo">Sacol16</a>
 
       <nav class="navbar">
-        <a href="#" class="active" >Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">.Git ignore</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#ignore">.Git ignore</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
       <div class="home-content">
         <h1>Hola, Soy Santiago Colonia</h1>
         <h2>Estudiante de Ingenieria Multimedia</h2>
-        <p>Actualmente cursando septimo semestre en la universidad autonoma de occidente.</p>
+        <p>Actualmente cursando el séptimo semestre en la Universidad Autónoma de Occidente. Tengo un gran interés en el desarrollo web y el desarrollo de videojuegos, áreas en las que disfruto explorar y crear experiencias innovadoras. Cuento con 8 meses de experiencia como gameplay designer, lo que me ha permitido desarrollar habilidades creativas y técnicas en la creación de experiencias interactivas. Soy una persona apasionada por el aprendizaje continuo y siempre estoy en busca de nuevos desafíos para crecer profesionalmente.</p>
+      </div>
+      <div class="home-img">
+        <img src="assets/Foto.png" alt="">
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-content">
         <h1>Sobre mi</h1>
         <h3>Habilidades Duras</h3>
@@ -73,7 +77,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="portfolio-content">
         <h1>Proyectos</h1>
         <div class="btn-box3">
@@ -91,26 +95,49 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+
+    <section id="ignore" class="ignore">
+      <div class="ignore-content">
+        <h1>.Git Ignore</h1>
+        <p>Es un archivo de texto utilizado en proyectos de Git para especificar qué archivos o directorios deben ser ignorados por el control de versiones. Esto significa que Git no rastreará ni incluirá estos archivos en los commits, incluso si cambian.</p>
+        <h2>Pasos para utilizar</h2>
+        <ol>
+          <li><strong>Crear el archivo <code>.gitignore</code>:</strong> En la raíz de tu proyecto, crea un archivo llamado <code>.gitignore</code>.</li>
+          <li><strong>Añadir reglas al <code>.gitignore</code>:</strong> Abre el archivo y escribe las reglas para ignorar archivos o carpetas (por ejemplo, <code>*.log</code> para ignorar archivos <code>.log</code>).</li>
+          <li><strong>Guardar y cerrar el archivo:</strong> Guarda los cambios en el archivo <code>.gitignore</code>.</li>
+          <li><strong>Eliminar archivos previamente añadidos (si es necesario):</strong> Si ya hay archivos rastreados que deberían ser ignorados, elimina su seguimiento con <code>git rm --cached archivo</code>.</li>
+          <li><strong>Hacer commit de los cambios:</strong> Añade el archivo <code>.gitignore</code> a Git y haz un commit:
+            <pre><code>git add .gitignore
+    git commit -m "Añadir .gitignore"
+            </code></pre>
+          </li>
+          <li><strong>Continuar trabajando normalmente:</strong> Git ignorará los archivos especificados en <code>.gitignore</code> en futuros commits.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
       <div class="contact-content">
         <h1>Contacto</h1>
         <div class="btn-box4">
-          <div>
-            <img class="img" src="assets/pngwing.com (6).png" alt="">
-            <a href="">Instagram</a></div>
-          <div>
-            <img class="img" src="/assets/pngwing.com (7).png" alt="">
-            santiago.colonia@uao.edu.co
-            </div>
-          </div>
+          <a href="https://www.instagram.com/colonia_2115?igsh=N2RkcWU0Mzl3Nmhy&utm_source=qr">
+            <img class="img" src="assets/Instagram.png" alt="">
+            <span>Instagram</span>
+          </a>
+          <a href="https://github.com/Sacol16">
+            <img class="img" src="assets/Github.png" alt="">
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/santiago-colonia-4287042b4">
+            <img class="img" src="assets/Linkedin.png" alt="">
+            <span>Linkedin</span>
+          </a>
+          <a>
+            <img class="img" src="assets/Discord.png" alt="">
+            <span>colonia2115</span>
+          </a>
+        </div>
       </div>
     </section>
-    <section class="ignore">
-      <div class="ignore-content">
-        <h1>Hola, Soy Santiago Colonia</h1>
-        <p>Actualmente cursando septimo semestre en la universidad autonoma de occidente.</p>
-      </div>
-    </section>
-    
   </body>
 </html>
